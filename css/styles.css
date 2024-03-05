@@ -25,3 +25,29 @@ body {
 .titulo span {
     font-size: 2rem;
 }
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;/*reloj, si solo son dos valores el primero seria arriba y abajo y el segundo seria derecha izquierda*/
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+.navegacion-principal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover{ /*cambio de color cuando nos posamos en nombre de enlace*/
+    background-color: var(--primario);
+    color: var(--oscuro);
+}

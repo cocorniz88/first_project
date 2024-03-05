@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñador Freelancer</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub&display=swap" rel="stylesheet">
@@ -15,12 +17,14 @@
          <h1 class="titulo">Juan Guillermo Vergara <span>Freelancer</span></h1>
     </header>
 
-    <nav>
-        <a href="#">Inico</a>
-        <a href="#">Sobre Mi</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor"> <!--se pueden agregar varios atributos al class solo dejando un espacio a diferencia del id que solo permite 1-->
+            <a href="#">Inico</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
     
     <section>
         <h2 class="titulo">Diseño y Desarrollo Web Freelancer</h2>
