@@ -1,15 +1,27 @@
+:root { /*Defininir paleta de colores, es para guardar variables*/
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107; 
+    --secundario:#0097A7;
+    --gris:#757575; 
+    
+    /*--fuente-principal: 3.8rem ;/* no solo es para guardar colores se pueden poner varias variables que se utilicen en el codigo*/
+}
+
 html {
     font-size: 62.5%;
 }
 body {
     font-size: 16px;
+    font-family: "Krub", sans-serif;
 } /* estas dos primeras lineas es para que sea sencillo utilizar los rem en toda la pagina*/
 /* 1 rem = 10 px*/
-h1 {
+.titulo  {
     text-align: center;
     font-size: 3.8rem;
+    /*color:var(--primario); Esto es una variable de css*/
 }
 
-span {
+.titulo span {
     font-size: 2rem;
 }
