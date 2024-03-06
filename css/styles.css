@@ -27,7 +27,7 @@ body {
 }
 
 .contenedor{
-    width: 120rem;
+    max-width: 120rem;/* toma 1200px como maximo, para que se adapte a la pantalla cuando se  vuelve pequeña o grande*/
     margin: 0 auto;/*reloj, si solo son dos valores el primero seria arriba y abajo y el segundo seria derecha izquierda*/
 }
 
@@ -36,10 +36,19 @@ body {
 }
 .navegacion-principal{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /*para que la barra en pantalla pequeña se muestre de arriba hacia abajo*/
+    
+}
+@media (min-width: 768px) {/*768px es la pantalla de tablets, 480px telefono. 1140px para pc*/
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .navegacion-principal a{
+    display: block;
+    text-align: center;
     color: var(--blanco);
     text-decoration: none;
     font-size: 2rem;
@@ -50,16 +59,4 @@ body {
 .navegacion-principal a:hover{ /*cambio de color cuando nos posamos en nombre de enlace*/
     background-color: var(--primario);
     color: var(--oscuro);
-}
-
-@media (min-width: 480px) {
-    h1{
-
-    }
-}
-
-@media (min-width: 768px) {
-    h1{
-
-    }
 }
